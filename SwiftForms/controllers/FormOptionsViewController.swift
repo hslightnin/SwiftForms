@@ -66,14 +66,14 @@ open class FormOptionsSelectorController: UITableViewController, FormSelector {
         if let _ = selectedOptions.index(where: { $0 as! AnyHashable == optionValue as! AnyHashable }) {
                 cell?.accessoryType = .checkmark
             } else {
-                cell?.accessoryType = .disclosureIndicator
+                cell?.accessoryType = .none
             }
             
         } else if let selectedOption = formCell?.rowDescriptor?.value {
             if optionValue as! AnyHashable == selectedOption as! AnyHashable {
                 cell?.accessoryType = .checkmark
             } else {
-                cell?.accessoryType = .detailButton
+                cell?.accessoryType = .none
             }
         }
 
