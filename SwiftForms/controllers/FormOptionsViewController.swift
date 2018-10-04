@@ -73,7 +73,7 @@ open class FormOptionsSelectorController: UITableViewController, FormSelector {
             if optionValue as! AnyHashable == selectedOption as! AnyHashable {
                 cell?.accessoryType = .checkmark
             } else {
-                cell?.accessoryType = .none
+                cell?.accessoryType = .detailButton
             }
         }
 
